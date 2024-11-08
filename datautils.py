@@ -54,7 +54,7 @@ def get_ptb(nsamples, seed, seqlen, model):
 def get_c4(nsamples, seed, seqlen, model):
     from datasets import load_dataset
     traindata = load_dataset(
-        'allenai/c4', 'allenai--c4', data_files={'train': 'en/c4-train.00000-of-01024.json.gz'}, split='train'
+        'allenai/c4', 'allenai--c4', data_files={'train': 'en/c4-train.00000-of-00024.json.gz'}, split='train'
     )
     valdata = load_dataset(
         'allenai/c4', 'allenai--c4', data_files={'validation': 'en/c4-validation.00000-of-00008.json.gz'}, split='validation'
@@ -124,7 +124,7 @@ def get_ptb_new(nsamples, seed, seqlen, model):
 def get_c4_new(nsamples, seed, seqlen, model):
     from datasets import load_dataset
     traindata = load_dataset(
-        'allenai/c4', 'allenai--c4', data_files={'train': 'en/c4-train.00000-of-01024.json.gz'}, split='train'
+        'allenai/c4', 'allenai--c4', data_files={'train': 'en/c4-train.00000-of-00024.json.gz'}, split='train'
     )
     valdata = load_dataset(
         'allenai/c4', 'allenai--c4', data_files={'validation': 'en/c4-validation.00000-of-00008.json.gz'}, split='validation'
