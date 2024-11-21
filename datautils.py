@@ -124,10 +124,10 @@ def get_ptb_new(nsamples, seed, seqlen, model):
 def get_c4_new(nsamples, seed, seqlen, model):
     from datasets import load_dataset
     traindata = load_dataset(
-        'NeelNanda/c4-10k', 'allenai--c4', split='train'
+        'NeelNanda/c4-10k',  split='train'
     )
     valdata = load_dataset(
-        'NeelNanda/c4-10k', 'allenai--c4', split='train'
+        'NeelNanda/c4-10k',  split='train'
     )
 
     from transformers import AutoTokenizer
