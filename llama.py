@@ -329,5 +329,5 @@ if __name__ == '__main__':
 
     if args.save:
         llama_pack3(model, quantizers)
-        torch.save(model.state_dict(), args.save)
+        torch.save(model, args.save)
 
