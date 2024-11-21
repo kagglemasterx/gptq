@@ -57,7 +57,7 @@ def get_c4(nsamples, seed, seqlen, model):
         'NeelNanda/c4-10k',   split='train'
     )
     valdata = load_dataset(
-        'NeelNanda/c4-10k',  split='train'
+        'allenai/c4', 'allenai--c4', data_files={'validation': 'en/c4-validation.00000-of-00008.json.gz'}, split='validation'
     )
 
     from transformers import AutoTokenizer
@@ -127,7 +127,7 @@ def get_c4_new(nsamples, seed, seqlen, model):
         'NeelNanda/c4-10k',  split='train'
     )
     valdata = load_dataset(
-        'NeelNanda/c4-10k',  split='train'
+        'allenai/c4', 'allenai--c4', data_files={'validation': 'en/c4-validation.00000-of-00008.json.gz'}, split='validation'
     )
 
     from transformers import AutoTokenizer
