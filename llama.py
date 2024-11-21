@@ -7,6 +7,8 @@ from gptq import *
 from modelutils import *
 from quant import *
 
+DEV = torch.device('cuda:0')
+
 
 def get_llama(model):
     import torch
