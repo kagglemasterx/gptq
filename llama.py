@@ -325,7 +325,7 @@ if __name__ == '__main__':
             dataset, seed=args.seed, model=args.model, seqlen=model.seqlen
         )
         print(dataset)
-        llama_eval(model, testloader, DEV)
+        #llama_eval(model, testloader, DEV)
 
     if args.save:
         llama_pack3(model, quantizers)
