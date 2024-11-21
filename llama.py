@@ -314,9 +314,9 @@ if __name__ == '__main__':
         quantizers = llama_sequential(model, dataloader, DEV)
         print(time.time() - tick)
 
-    datasets = ['wikitext2', 'ptb', 'c4'] 
+    datasets = ['c4'] 
     if args.new_eval:
-        datasets = ['wikitext2', 'ptb-new', 'c4-new']
+        datasets = ['c4-new']
     for dataset in datasets:
         dataloader, testloader = get_loaders(
             dataset, seed=args.seed, model=args.model, seqlen=model.seqlen
