@@ -329,6 +329,6 @@ if __name__ == '__main__':
 
     if args.save:
         #llama_pack3(model, quantizers)
-        #torch.save(model, args.save)
-        model.save_pretrained('gptq_llama3.pt')
+        torch.save(model, args.save)
+        model.save_pretrained('gptq_llama3')
 
