@@ -328,6 +328,7 @@ if __name__ == '__main__':
         #llama_eval(model, testloader, DEV)
 
     if args.save:
-        llama_pack3(model, quantizers)
-        torch.save(model, args.save)
+        #llama_pack3(model, quantizers)
+        #torch.save(model, args.save)
+        model.save_pretrained('gptq_llama3.pt')
 
